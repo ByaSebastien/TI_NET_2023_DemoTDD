@@ -27,4 +27,15 @@ namespace TI_NET_2023_DemoTDD
         {
         }
     }
+
+    public class DividedByZeroMathException : MathException
+    {
+        public DividedByZeroMathException() : base("Impossible de diviser par 0")
+        {
+        }
+
+        public DividedByZeroMathException(string? message) : base(message)
+        {
+        }
+    }
 }
